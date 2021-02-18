@@ -1,0 +1,9 @@
+<h3>データの確認</h3>
+<%= form_with(model: @comment, local: true) do |form| %>
+  <%= form.hidden_field :studytitle %>
+  <%= form.hidden_field :content %>
+  <p>タイトル:<%= @comment.studytitle %></p>
+  <p>本文:<%= @comment.content %></p>
+  <%= form.submit  "登録する" %>
+  <%= form.submit "戻る", name: 'back' %>
+<% end %>
