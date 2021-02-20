@@ -37,6 +37,7 @@ class CommentsController < ApplicationController
   end
   def confirm
     @comment = Comment.new(comment_params)
+    render :new if @comment.invalid?
   end
   private
   def comment_params
