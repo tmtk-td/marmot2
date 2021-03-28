@@ -4,12 +4,22 @@
     <title>Marmot2</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <meta name="viewport" content="width=device-width">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+  <header>
+      <ul>
+        <li><a href="#">Bootstrapテキストページ</a></li>
+        <li><a href="#">トップページ</a></li>
+      </ul>
+      </header>
+      <%= yield %>
+      <footer>
+        <p>運営会社tmtk material株式会社</p>
+        <p>© 2015-2021 tmtk material Corp.</p>
+      </footer>
   </body>
 </html>

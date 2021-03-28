@@ -17,6 +17,10 @@
     <%= form.label :content %>
     <%= form.text_field :content %>
   </div>
+  <div>
+    <%= form.label :時間をを入力 %>
+    <%= form.time_select :timecount %>
+  </div>  
   <%= form.submit %>
 <% end %>
 <%= link_to "一覧画面", comments_path %>
