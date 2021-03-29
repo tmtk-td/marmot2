@@ -9,6 +9,7 @@
   <tr>
     <td><%= comment.studytitle %></td>
     <td><%= comment.content %></td>
+    <td><%= comment.timecount %></td>
     <td><%= link_to 'データ確認', comment_path(comment.id) %></td>
     <td><%= link_to "データ編集", edit_comment_path(comment.id), data: { confirm: '編集していいですか？' } %></td>
     <td><%= link_to 'データ削除', comment_path(comment.id), method: :delete ,data: { confirm: '削除していいですか？' } %></td>

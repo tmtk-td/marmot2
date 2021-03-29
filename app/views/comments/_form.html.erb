@@ -14,12 +14,12 @@
     <%= form.text_field :studytitle %>
   </div>
   <div class="comment_title">
-    <%= form.label :content %>
+    <%= form.label :内容 %>
     <%= form.text_field :content %>
   </div>
-  <div>
-    <%= form.label :時間をを入力 %>
-    <%= form.time_select :timecount %>
+  <div class="comment_title">
+    <%= form.label :時間を入力 %>
+    <%= form.date_field :timecount %>
   </div>  
   <%= form.submit %>
 <% end %>

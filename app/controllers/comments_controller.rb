@@ -41,7 +41,7 @@ class CommentsController < ApplicationController
   end
   private
   def comment_params
-    params.require(:comment).permit(:studytitle, :content)
+    params.require(:comment).permit(:studytitle, :content, :study_date)
   end
   def set_comment
     @comment = Comment.find(params[:id])
