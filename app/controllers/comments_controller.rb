@@ -35,13 +35,10 @@ class CommentsController < ApplicationController
     @comment.destroy
     redirect_to comments_path, notice:"削除しました！"
   end
-  def confirm
-    @comment = Comment.new(comment_params)
-    render :new if @comment.invalid?
-  end
+  
   private
   def comment_params
-    params.require(:comment).permit(:studytitle, :content, :study_date)
+    params.require(:comment).permit(:studytitle, :content, :hour, :minute)
   end
   def set_comment
     @comment = Comment.find(params[:id])

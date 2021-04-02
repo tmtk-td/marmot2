@@ -4,7 +4,7 @@
   <%= form.hidden_field :content %>
   <p>タイトル:<%= @comment.studytitle %></p>
   <p>本文:<%= @comment.content %></p>
-  <p>学習時間: <%= @comment.timecount %></p>
+  <p>学習時間: <%= @comment.hour %></p><%= @comment.minute %></p>
   <%= form.submit  "登録する" %>
   <%= form.submit "戻る", name: 'back' %>
 <% end %>

@@ -18,7 +18,8 @@ ActiveRecord::Schema.define(version: 2021_03_28_074328) do
   create_table "comments", force: :cascade do |t|
     t.string "studytitle"
     t.text "content"
-    t.integer "timecount"
+    t.integer "hour"
+    t.integer "minute"
   end
 
 end
